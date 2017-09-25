@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Calculator22;
 
 namespace WcfCalculator2
 {
@@ -29,5 +30,30 @@ namespace WcfCalculator2
             }
             return composite;
         }
+
+        public decimal add(decimal a, decimal b)
+        {
+            Calculator22.Calculator c = new Calculator();
+            return c.Add(a, b);
+        }
+
+        public decimal Subtract(decimal a, decimal b)
+        {
+            Calculator22.Calculator sub = new Calculator();
+            return sub.Subtract(a, b);
+        }
+
+        public decimal Multiply(decimal a, decimal b)
+        {
+            Calculator22.Calculator mul = new Calculator();
+            return mul.Multiply(a, b);
+        }
+
+        public decimal Divide(decimal a, decimal b)
+        {
+            Calculator22.Calculator div = new Calculator();
+            return div.Divide(a, b);
+        }
+
     }
 }

@@ -20,6 +20,19 @@ namespace WcfCalculator2
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
+
+        [OperationContract]
+        decimal add(decimal a, decimal b);
+
+        [OperationContract]
+        decimal Subtract(decimal a, decimal b);
+
+        [OperationContract]
+        decimal Multiply(decimal a, decimal b);
+
+        [OperationContract]
+        decimal Divide(decimal a, decimal b);
+
     }
 
 

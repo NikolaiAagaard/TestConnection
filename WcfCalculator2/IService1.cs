@@ -33,6 +33,9 @@ namespace WcfCalculator2
         [OperationContract]
         decimal Divide(decimal a, decimal b);
 
+        [OperationContract]
+        string Student(string a);
+
     }
 
 

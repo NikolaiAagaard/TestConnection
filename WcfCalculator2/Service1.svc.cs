@@ -55,5 +55,9 @@ namespace WcfCalculator2
             return div.Divide(a, b);
         }
 
+        public string Student(string a)
+        {
+           return a;
+        }
     }
 }
